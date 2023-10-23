@@ -16,8 +16,8 @@ app.add_middleware(
     allow_methods=["*"], 
     allow_headers=["*"],  
 )
-ACCES_KEY_ID = 'AKIAYQWXU4XP2SI7YNOX'
-SECRET_ACCES_KEY = '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'
+ACCES_KEY_ID = ''
+SECRET_ACCES_KEY = ''
 @app.post("/upload")
 def upload(file: UploadFile):
     s3 = boto3.client("s3",aws_access_key_id=ACCES_KEY_ID, aws_secret_access_key=SECRET_ACCES_KEY)
